@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAppName"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="App Logo" />
+
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewYourName"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/josiane"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewAppName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStudentNumber"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewStudentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/student_number"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewYourName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProceed"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/buttonProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/proceed_to_main_screen"
+        app:layout_constraintTop_toBottomOf="@id/textViewStudentNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
