@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weatherapp</string>
+    <string name="app_logo">app_logo</string>
+    <string name="main_screen_title">main_screen_title</string>
+    <string name="daily_temperatures">daily_temperatures</string>
+    <string name="back_to_welcome">back_to_welcome</string>
+    <string name="average_max_temperature">average_max_temperature</string>
+    <string name="josiane">josiane\n</string>
+    <string name="student_number">student_number</string>
+    <string name="proceed_to_main_screen">proceed_to_main_screen</string>
+    <string name="save_temperatures_button">save_temperatures_button</string>
+    <string name="edit_temps_screen_title">edit_temps_screen_title</string>
+    <string name="enter_temp_for_day">enter_temp_for_day</string>
+    <string name="edit_temperatures_button">edit_temperatures_button</string>
+</resources>
